@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.index-body {
+  background-color: #ecf0f1;
+}
+
+.photo-body {
+  background-color: #383838;
+}
+
+.nav-bar {
+  height: 8vh;
+  width: 100%;
+  background-color: #212121;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+}
+
+.logo a img {
+  height: 25px;
+  width: auto;
+}
+
+.photo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.photo a img {
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.banner {
+  position: relative;
+  height: 92vh;
+  background-image: url(./image/background.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-vector {
+  position: relative;
+  height: 92vh;
+  background-image: url(./image/bg-vector.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 30px;
+}
+
+.bg-vector h3 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #f1f1f1;
+  margin-bottom: 10px;
+}
+
+.text-content {
+  position: relative;
+  left: -15%;
+}
+
+.text-content h3 {
+  font-family: "Allura", cursive;
+  font-size: 70px;
+  color: #212121;
+}
+
+.text-content p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: transparent;
+  font-size: 30px;
+  -webkit-text-stroke-width: 1.6px;
+  -webkit-text-stroke-color: #383838;
+}
+
+.carousel-container {
+  width: 50%;
+  margin: auto;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+}
+
+.carousel-slide {
+  width: 100%;
+  display: flex;
+  max-height: 410px;
+  margin-bottom: 10px;
+}
+
+.carousel-slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.slideBtn {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.buttons img {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 1300px) {
+  .banner {
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .text-content h3 {
+    font-size: 50px;
+  }
+  .text-content p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .carousel-container {
+    width: 80%;
+  }
+}
